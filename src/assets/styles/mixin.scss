@@ -1,0 +1,246 @@
+// primary
+$primary_fill: #00B2A6;
+$primary_line: #00EBDB;
+$primary_select: rgba($color:$primary_line, $alpha: 0.12);
+$primary_grad_light:linear-gradient(270deg, #00C2C2 0%, #00C281 100%);
+$primary_grad_dark: linear-gradient(270deg, #00E5E5 0%, #00E599 100%);
+
+// state
+$bg_link: #0AF;
+$bg_success: #00C281;
+$bg_warning: #FFF347;
+$bg_error: #FF4040;
+
+// gray
+$bg_gray_01: #45464D;
+$bg_gray_02: #393A40;
+$bg_gray_03: #2E2F33;
+$bg_gray_04: #222326;
+$bg_gray_05: #171719;
+
+// white
+$bg_white100: rgba(255, 255, 255, 1);
+$bg_white87: rgba(255, 255, 255, 0.87);
+$bg_white80: rgba(255, 255, 255, 0.80);
+$bg_white60: rgba(255, 255, 255, 0.60);
+$bg_white40: rgba(255, 255, 255, 0.40);
+$bg_white20: rgba(255, 255, 255, 0.20);
+$bg_white10: rgba(255, 255, 255, 0.10);
+
+// black
+$bg_default:#171719;
+$bg_black100: rgba(0, 0, 0, 1);
+$bg_black87: rgba(0, 0, 0, 0.87);
+$bg_black80: rgba(0, 0, 0, 0.80);
+$bg_black60: rgba(0, 0, 0, 0.60);
+$bg_black40: rgba(0, 0, 0, 0.40);
+$bg_black20: rgba(0, 0, 0, 0.20);
+$bg_black20: rgba(0, 0, 0, 0.10);
+
+// font
+$fc_default: #fff;
+$fc_87: rgba(255, 255, 255, 0.87);
+$fc_80: rgba(255, 255, 255, 0.80);
+$fc_70: rgba(255, 255, 255, 0.70);
+$fc_60: rgba(255, 255, 255, 0.60);
+$fc_40: rgba(255, 255, 255, 0.40);
+$fc_20: rgba(255, 255, 255, 0.20);
+
+// flex
+@mixin dflx{
+    display: flex;
+}
+@mixin dflx_as {
+    display: flex;
+    align-items: flex-start;
+}
+@mixin dflx_ac {
+    display: flex;
+    align-items: center;
+}
+@mixin dflx_ae {
+    display: flex;
+    align-items: flex-end;
+}
+@mixin dflx_jbet {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin dflx_jard {
+    display: flex;
+    justify-content: space-around;
+}
+@mixin dflx_jstart{
+    display: flex;
+    justify-content: flex-start;
+}
+@mixin dflx_jcent{
+    display: flex;
+    justify-content: center;
+}
+@mixin dflx_jend{
+    display: flex;
+    justify-content: flex-end;
+}
+@mixin dflx_ac_jard{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@mixin dflx_as_jcent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+@mixin dflx_ac_jcent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin dflx_ae_jcent {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+@mixin dflx_as_jbet {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+@mixin dflx_ac_jbet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin dflx_ae_jbet {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+@mixin dflx_ac_jend {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+@mixin flx_wrap {
+    flex-wrap: wrap;
+}
+@mixin flx_nowrap {
+    flex-wrap: nowrap;
+}
+@mixin dflx_column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin dflx_column_jbet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+// font
+@mixin fs_24_bold {
+    font-size: 24px;
+    font-weight: 700;
+}
+@mixin fs_20_bold {
+    font-size: 20px;
+    font-weight: 700;
+}
+@mixin fs_16_bold {
+    font-size: 16px;
+    font-weight: 700;
+}
+@mixin fs_16_medium {
+    font-size: 16px;
+    font-weight: 500;
+}
+@mixin fs_16_regular {
+    font-size: 16px;
+    font-weight: 400;
+}
+@mixin fs_14_medium {
+    font-size: 14px;
+    font-weight: 500;
+}
+@mixin fs_14_regular {
+    font-size: 14px;
+    font-weight: 400;
+}
+@mixin fs_13_medium {
+    font-size: 13px;
+    font-weight: 500;
+}
+@mixin fs_13_regular {
+    font-size: 13px;
+    font-weight: 400;
+}
+@mixin fs_12_regular {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+//trans_center
+@mixin ab_trans_center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//text_overflow
+@mixin txt_ellip {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+//backdrop-filter solve
+@mixin backFilter_solve{
+    &::before{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(30px);
+    }
+}
+
+// etc
+@mixin border_radius02 {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+@mixin border_radius04 {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+@mixin border_radius08 {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+@mixin border_radius10 {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+@mixin border_radius50per {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+@mixin backFilter($blur: 1.875rem){
+    -webkit-backdrop-filter: blur($blur);
+    backdrop-filter: blur($blur);
+}

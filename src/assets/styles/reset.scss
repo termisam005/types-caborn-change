@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+body,html{font-size:1rem;-webkit-text-size-adjust:auto}
+blockquote,body,button,code,dd,div,dl,dt,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,input,legend,li,main,ol,p,pre,select,span,td,textarea,th,ul,input,select{margin:0;padding:0;font-family:"Pretendard Variable",-apple-system,"Malgun Gothic",sans-serif;line-height:1.1;color:#fff}
+h1,h2,h3,h4,h5,h6{font-size:inherit}
+fieldset,img{border:0 none}
+img{max-width:100%;vertical-align:top}
+dl,li,menu,ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}
+button,input,select,textarea{vertical-align:middle;border:none;outline:none;background:0 0}
+button{border:0 none;background-color:transparent;cursor:pointer;text-align:center;}
+body{-webkit-text-size-adjust:none}
+table{border-collapse:collapse;border-spacing:0}
+input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none}
+a{text-decoration:none;cursor:pointer;color:inherit}
+a:active,a:hover,a:visited{text-decoration:none}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:400}
+.hidden_tag{display:inline-block;position:absolute;z-index:-1;width:1px;height:1px;overflow:hidden;border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}
+body{overflow-x:hidden;padding:0;margin:0;border:0;text-align:unset;color:#fff;}
+ul{list-style:none;margin-top:0;margin-bottom:1rem;padding-left:2rem}
+li,ul{list-style:none;margin:0;padding:0;border:0;font-size:100%}
+button{list-style:none;margin:0;padding:0;border:0;font-size:100%;background:0 0;color:#fff;line-height:1;word-break: keep-all;}

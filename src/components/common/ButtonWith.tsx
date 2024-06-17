@@ -6,7 +6,7 @@ interface Props{
 	id?: string;
 	className: string;
 	onClick?: () => void;
-	children?: ReactNode;
+	children: ReactNode;
 }
 
 const ButtonWith = ({ type, id, className, onClick, children }:Props) => {

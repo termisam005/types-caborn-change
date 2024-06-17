@@ -1,16 +1,22 @@
 import React from 'react';
 import { useState } from 'react';
-import ImgComponent from '../../components/common/ImgComponent';
+import ImgComponent from './ImgComponent';
 
+interface Props{
+    zoneClass?: string;
+	type?: 'text' | 'email' | 'phone' |'submit';
+	placeholder?: string;
+    inputClass?: string;
+}
 
-const InputZone = ({ zoneClass, type , placeholder, inputClass }) => {
+const InputZone = ({ zoneClass, type , placeholder, inputClass}:Props) => {
 
     //input 이벤트
     const [id, setId] = useState('');
-    const writePut = (e) => {
+    const writePut = (e:any) => {
         setId(e.target.value);
     }
-    const onDelete = (e) => {
+    const onDelete = (e:any) => {
         setId(e.target.value = '');
     }
 

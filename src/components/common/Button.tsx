@@ -1,5 +1,6 @@
 import {memo} from 'react';
 
+
 interface Props{
 	type?: 'button' | 'submit' | 'reset';
 	id?: string;

@@ -1,9 +1,15 @@
 import React from 'react';
+import { memo } from 'react';
 import { Link } from 'react-router-dom';
 import ImgComponent from './ImgComponent';
 
 
-const List = ({ i, product }) => {
+interface Props{
+	i:number;
+    product:any;
+}
+
+const List = memo(({i, product}:Props) => {
 
     return (
         <li>
@@ -26,6 +32,6 @@ const List = ({ i, product }) => {
             </Link>
         </li>
     );
-};
+});
 
 export default List;
